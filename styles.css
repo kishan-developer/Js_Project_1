@@ -1,1 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Genre end */
+nav {
+  background-color: #000;
+  color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  padding: 1rem;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logo {
+  margin-right: auto;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  margin-right: 10px;
+  width: 11rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+.type-btn {
+  margin-left: auto;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 6px;
+}
+/* end of nav */
+
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+.aside {
+  width: 250px;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 185px;
+  height: 350px;
+  overflow: hidden;
+}
+.movie-main {
+  padding: 20px;
+}
+.genres {
+  width: 250px;
+}
+.card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-details {
+  padding: 10px 5px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
