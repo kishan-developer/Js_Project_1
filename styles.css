@@ -19,6 +19,7 @@ ul {
 .genres-list li {
   cursor: pointer;
   color: #aaa;
+  padding: 4px;
 }
 .genres-list li:hover {
   color: #fff;
@@ -67,6 +68,16 @@ nav {
   border: none;
   border-radius: 6px;
 }
+.search-btn {
+  width: 4rem;
+  border-radius: 6px;
+  height: 2.3rem;
+  text-align: center;
+}
+.search-btn:hover {
+  color: #fff;
+  background-color: rgb(29, 44, 29);
+}
 /* end of nav */
 
 .main {
@@ -103,6 +114,9 @@ nav {
   padding: 20px;
   overflow-y: overlay;
 }
+.movie-main h2 {
+  padding-bottom: 16px;
+}
 .genres {
   width: 250px;
 }
@@ -135,8 +149,9 @@ nav {
 }
 
 .modal-content {
-  overflow: overlay; /* Enable scroll if needed */
   background-color: #fefefe;
+  overflow: overlay; /* Enable scroll if needed */
+  border-radius: 15px;
   max-width: 900px;
   margin: 5rem auto; /* 15% from the top and centered */
   padding: 20px;
