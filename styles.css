@@ -253,8 +253,15 @@ nav {
   background-color: rgb(92, 69, 24);
 }
 @media only screen and (max-width: 750px) {
+  .logo-text {
+    font-size: 1rem;
+  }
   .aside {
     width: 150px;
     padding: 1rem;
+  }
+  .genere-heading {
+    font-size: 1rem;
+    padding-top: 15px;
   }
 }
