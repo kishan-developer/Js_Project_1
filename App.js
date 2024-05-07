@@ -18,6 +18,8 @@ const totalAmount = document.querySelector(".total-amount")
 const tickets = document.getElementById("tickets");
 let price = 250;
 
+
+// fetching the data 
 const fetchData = async function (url) {
     try {
         const response = await fetch(`${url}&${api_key}`);
@@ -75,7 +77,6 @@ function render(movieList) {
 
             fetchDetails(id);
 
-            // card.removeEventListener("click", openModal)
         }
     });
 }
@@ -94,8 +95,6 @@ window.onload = () => {
     fetchData(nowPlayingURL);
     // fetchGenere(genereURL)
 }
-//"https://api.themoviedb.org/3/search/movie?page=1&query=hello&api_key=47ae45b316a49c696d64ff975af42329"
-// https://api.themoviedb.org/3/search/movie?page=1&query=hello&api_key=47ae45b316a49c696d64ff975af42329
 
 // while searching if clicks on logo it goes to the home page
 const logo = document.querySelector(".logo-text");
@@ -103,31 +102,6 @@ logo.addEventListener("click", () => {
     location.reload();
 })
 
-
-/*
-const movieListvar = [];
-
-const filterMocieList = [];
-
-//id and filtr data to result it and item work on it .includes to that exact
-// in genre api in response if any id that includes in the now playing id so call it under the
-
-// Genere
-const fetchGenere = async function (url) {
-    try {
-        const response = await fetch(`${url}&${api_key}`);
-
-        let data = await response.json();
-
-        data = reMapGenere(data)
-        console.log(data)
-
-        genereData(data)
-
-    } catch (error) {
-        console.log(error);
-    }
-}
 
 
 function reMapGenere({ results: genereList }) {
@@ -162,7 +136,10 @@ function genereData(movieList) {
         movieCardList.appendChild(card);
     });
 }
-*/
+
+
+
+// Fetching the movie details
 
 async function fetchDetails(movieId) {
     const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?${api_key}`)
@@ -247,17 +224,7 @@ backBtn.forEach(btn => {
 
 
 
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// }
-
-// span.onclick = function () {
-//     modal.style.display = "none";
-// }
-
-// Genere
-
-
+// get the genres
 const getGenres = async function () {
     try {
         const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?${api_key}`);

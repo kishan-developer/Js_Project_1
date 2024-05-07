@@ -43,7 +43,9 @@ nav {
 
 .logo-text {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: red;
+  cursor: pointer;
 }
 .logo {
   margin-right: auto;
@@ -57,13 +59,13 @@ nav {
 .search-input {
   margin-right: 10px;
   width: 11rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 6px;
 }
 
 .type-btn {
   margin-left: auto;
-  height: 2.5rem;
+  height: 1rem;
   width: 5rem;
   border: none;
   border-radius: 6px;
